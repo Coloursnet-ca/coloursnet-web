@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+}
+
+:root {
+  --button-border-radius: 0.85em;
+}
+@media only screen and (min-width: 700px) {
+  :root {
+    --siteheader-height: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  :root {
+    --siteheader-height: 5rem;
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.tickerContainer {
+  overflow: hidden;
+  background-color: #f0f0f0; /* Adjust as needed */
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+.innerTicker {
+  display: inline-block;
+  animation: scroll 10s linear infinite; /* Adjust duration as needed */
+  white-space: nowrap;
+}
+
+.tickerText {
+  display: inline-block;
+  padding-right: 50px; /* Space between repeated texts */
+}
